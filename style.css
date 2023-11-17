@@ -1,0 +1,361 @@
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Montserrat:wght@200;800&display=swap');
+
+/* General */
+
+*{
+	outline:none;
+	list-style-type:none;
+	text-decoration:none;
+	padding:0;
+	margin:0;
+	font-family:'Montserrat', sans-serif;
+	box-sizing:border-box;
+}
+
+body{
+	text-align:center;
+}
+
+section{
+	margin:15px auto 15px auto;
+	width:calc(100% - 30px);
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	row-gap:15px;
+}
+
+
+/*Button*/
+
+button{
+	width:200px;
+	height:50px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:transparent;
+	cursor:pointer;
+	border:2px solid black;
+	transition:.5s ease-in-out;
+	margin-top:2rem;
+	text-transform:uppercase;
+	color:black;
+}
+
+button:hover{
+	background-color:rgba(0, 0, 0, 0.5);
+	color:white;
+}
+
+/*Navbar*/
+
+.logo{
+	width:70px;
+	height:70px;
+	margin-left:2rem;
+}
+
+navbar{
+	position:absolute;
+	padding:35px;
+	display:flex;
+	align-items:center;
+	width:100%;
+}
+
+navbar img.burger{
+	width:50px;
+	height:50px;
+	display:none;
+}
+
+navbar ul li{
+	display:inline;
+	margin-left:4rem;
+	text-transform:uppercase;
+	color:#ffffff;
+	font-family:'Montserrat', sans-serif;
+}
+
+navbar ul li a{
+	text-transform:uppercase;
+	color:#ffffff;
+	font-family:'Montserrat', sans-serif;
+	transition:.2s ease-in-out;
+}
+
+navbar ul li a:hover{
+	color:#F5F5F5;
+}
+
+navbar ul li img.discretlogo {
+	display:none;
+}
+
+.showmenu{
+	left:0%;
+}
+
+/*Title section*/
+
+header{
+	background-image:url("bg-mountain.jpeg");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;margin-left:auto;
+	margin:15px auto 15px auto;
+	width:calc(100% - 30px);
+	height:100vh;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+div.title{
+	text-align:right;
+	min-width:80%;
+	margin:0 auto;
+	color:white;
+	padding:5%;
+}
+
+div.title h1{
+	font-size:3rem;
+}
+
+div.title p{
+    font-size: 1.2rem;
+    padding:0;
+    text-align: right;
+    font-family:'Edu TAS Beginner', serif;
+}
+
+/*Second section*/
+
+.image-1 {
+	background-image:url('chair.jpg');
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	width:calc(50% - 7.5px);
+	height:600px;
+}
+
+.image-2 {
+	background-image:url('messages.jpg');
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	width:calc(50% - 7.5px);
+	height:600px;
+}
+
+.image-3 {
+	background-image:url('work.jpg');
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	width:calc(50% - 7.5px);
+	height:600px;
+}
+
+.text-section{
+	background-color:#f5f5f5;
+	width:calc(50% - 7.5px);
+	height:600px;
+	display:flex;
+	flex-flow:column wrap;
+	justify-content:center;
+	padding:0 auto;
+}
+
+h2 {
+	font-size:2rem;
+	font-weight:bold;
+}
+
+h3 {
+	font-family:'Edu TAS Beginner', serif;
+	padding:0 0 30px 0;
+}
+
+/*Numb section*/
+
+section.numb-section{
+	display:flex;
+	justify-content:space-between;
+	flex-flow:row;
+	flex-wrap:wrap;
+	width:calc(100% - 120px);
+}
+
+h2.number{ 
+	font-size:3rem;
+	text-align:left;
+} 
+
+p.what{ 
+	font-size:0.8rem;
+	text-align:left !important;	
+	margin:0;
+	padding:0;
+}
+
+/*Functions section*/
+
+.functionDiv{
+	height:400px;
+	width:calc(33% - 7.5px);
+	background-color:#f5f5f5;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	transition:.5s ease-in-out;
+	font-size:1rem;
+	row-gap:15px;
+}
+
+.functionDiv:hover{
+	background-color:#e0cece;
+}
+
+div.functionDiv img{
+	width:120px;
+	height:120px;
+}
+
+section.titleSection {
+	display:flex;
+	margin-top:15px;
+	flex-direction:column;
+	justify-content: center;
+	align-items:center;
+	height:300px;
+}
+
+p {
+	font-weight:200;
+	display:block;
+	margin:0 auto;
+	font-size:0.9rem;
+	padding:5%;
+	text-align:justify;
+}
+
+/*Photo gallery*/
+
+.gallery-element{
+	position:relative;
+	width:calc(25% - 15px);
+	height:350px;
+	cursor:pointer;
+	text-align:left;
+}
+
+.gallery-element p{
+	text-align:left;
+	padding:0;
+
+}
+
+.gallery-element img{
+	display:block;
+	width:100%;
+	height:100%;
+	display:inline;
+	z-index:3;
+}
+
+.photoOverlay {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background:rgba(0, 0, 0, 0.7);
+	opacity:0;
+	transition:.5s ease-in-out;
+}
+
+.photoDetails{
+	color: white;
+  	font-size: 15px !important;
+  	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+ 	-webkit-transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+ 	 text-align: center;
+ 	 z-index:2;
+ 	 opacity:0;
+	transition:.2s ease-in-out;
+	margin-left:auto;
+	margin-right: auto;
+	padding:0 !important;
+}
+
+.photoOverlay:before{
+	content:'';
+	position:absolute;
+	width:90%;
+	height:90%;
+	border:2px solid white;
+	left:5%;
+	top:5%;
+}
+
+.gallery-element:hover .photoOverlay , .gallery-element:hover .photoDetails{
+	opacity:1;
+}
+
+/*Form area*/
+
+form {
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	width:100%;
+	align-items:center;
+	row-gap:15px;
+	padding:5%;
+}
+
+form label{
+	font-weight:bold;
+}
+
+form input, textarea{
+	width:50%;
+	padding:1rem;
+}
+
+/*Footer section*/
+
+footer {
+	background-color:#242424;
+	color:whitesmoke;
+	display:flex;
+	flex-direction:row;
+	column-gap:15%;
+	align-items:flex-start;
+	padding:2rem;
+	margin:15px auto 15px auto;
+	width:calc(100% - 30px);
+	text-align:left;
+}
+
+footer ul li.titleEnd{
+	color:#7d7d7d;
+	margin-bottom:2rem;
+	font-size:1rem;
+}
+
+footer ul li{
+	margin-bottom:0.2rem;
+	font-size:0.8rem;
+}
